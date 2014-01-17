@@ -191,4 +191,7 @@ public class Settings extends SettingsActivity {
     public static class UserAndAccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
 
+    // Potato Activities
+    public static class RootManagementActivity extends SettingsActivity { /* empty */ }
+
 }
