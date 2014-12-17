@@ -21,4 +21,7 @@
     <string name="build_type">Build Type</string>
     <string name="build_date">Build Date</string>
     <string name="potato_title">POSP</string>
+
+    <!-- Volume settings - Volume adjustment sound -->
+    <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
 </resources>
