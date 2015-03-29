@@ -107,6 +107,9 @@
     <string name="battery_temp_title">Battery temperature</string>
     <string name="battery_temp_summary">Tap to switch scale</string>
 
+    <!-- Screenshot shutter sound -->
+    <string name="screenshot_shutter_sound_title">Screenshot shutter sound</string>
+
     <!-- Torch Power button gestures -->
     <string name="double_tap_power_flashlight_screen_title">Activate the torch</string>
     <string name="double_tap_power_flashlight_title">Screen off power button torch</string>
