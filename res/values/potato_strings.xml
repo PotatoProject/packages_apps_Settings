@@ -28,4 +28,7 @@
     <!-- Device Model -->
     <string name="potato_device_model">Device Model</string>
 
+    <!-- Screenshot shutter -->
+    <string name="screenshot_shutter_sound_title">Screenshot sound</string>
+
 </resources>
