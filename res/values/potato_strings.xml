@@ -46,4 +46,8 @@
     <string name="encryption_and_credential_settings_summary_disabled" product="default">Phone is not encrypted</string>
     <!-- Security Settings screen Encryption and crendential summary -->
     <string name="encryption_and_credential_settings_summary_disabled" product="tablet">Device is not encrypted</string>
+
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">Pocket detection</string>
+    <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
 </resources>
