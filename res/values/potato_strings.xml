@@ -151,4 +151,9 @@
     <string name="ringtone1_title">Phone ringtone - SIM 1</string>
     <string name="ringtone2_title">Phone ringtone - SIM 2</string>
 
+    <!-- Dashboard Conditions -->
+    <string name="dashboard_conditions_title">Dashboard conditions</string>
+    <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
+    <string name="summary_dashboard_conditions_disabled">Dashboard conditions are disabled</string>
+
 </resources>
