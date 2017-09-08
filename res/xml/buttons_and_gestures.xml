@@ -20,6 +20,13 @@
     android:key="buttons_and_gestures_screen"
     android:title="@string/buttons_and_gestures_dashboard_title">
 
+    <Preference
+            android:title="@string/navbar_tuner_title" >
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.NavBarActivity" />
+    </Preference>
+
     <PreferenceCategory
         android:key="hardware_keys"
         android:title="@string/hardware_keys_category" >

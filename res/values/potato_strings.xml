@@ -68,4 +68,7 @@
     <string name="hardware_keys_double_tap_title">Double tap action</string>
     <string name="hardware_keys_category">Hardware keys</string>
     <string name="hardware_keys_disable_title">Disable keys</string>
+
+    <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Navbar buttons</string>
 </resources>
