@@ -22,6 +22,12 @@
     <string name="build_date">Build Date</string>
     <string name="potato_title">POSP</string>
 
+    <!-- Updater -->
+    <string name="update_settings_title">Updates</string>
+    <string name="update_settings_summary">Check for the latest version of the rom</string>
+    <string name="update_package" translatable="false">co.potatoproject.center</string>
+    <string name="update_activity" translatable="false">co.potatoproject.center.MainActivity</string>
+
     <!-- Volume settings - Volume adjustment sound -->
     <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
 
