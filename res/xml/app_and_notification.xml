@@ -48,6 +48,12 @@
         android:order="10" />
 
     <Preference
+        android:key="heads_up_notifications"
+        android:title="@string/heads_up_notifications"
+        android:order="11"
+        android:fragment="com.android.settings.notification.HeadsUpSettings" />
+
+    <Preference
         android:key="manage_perms"
         android:title="@string/app_permissions"
         android:order="12"
