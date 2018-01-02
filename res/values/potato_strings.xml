@@ -185,4 +185,8 @@
     <!-- Now playing -->
     <string name="ambient_play_settings_title">Check out \"Now Playing\"</string>
     <string name="ambient_play_settings_summary">Be notified of music being played around you</string>
+
+    <!-- Rounded corners -->
+    <string name="corner_radius">Rounded Corner Radius</string>
+    <string name="content_padding">Corner Content Padding</string>
 </resources>
