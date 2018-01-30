@@ -209,5 +209,8 @@
     <string name="prefer_black_themes">Prefer black themes</string>
     <string name="prefer_black_themes_summary">Use black theme overlays instead of dark ones when possible</string>
 
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Face auto unlock</string>
+    <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>
 
 </resources>
