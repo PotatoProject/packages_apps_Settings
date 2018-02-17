@@ -145,6 +145,11 @@
         android:summary="@string/summary_placeholder" />
 
     <Preference
+        android:key="weather"
+        android:fragment="com.android.settings.potato.Weather"
+        android:title="@string/weather_title" />
+
+    <Preference
         android:key="vr_display_pref"
         android:title="@string/display_vr_pref_title"
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
