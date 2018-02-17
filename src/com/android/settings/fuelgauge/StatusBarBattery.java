@@ -38,6 +38,7 @@ public class StatusBarBattery extends SettingsPreferenceFragment implements
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
 
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 2;
+    private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 3;
 
     private ListPreference mStatusBarBatteryShowPercent;
     private ListPreference mStatusBarBattery;
@@ -97,7 +98,8 @@ public class StatusBarBattery extends SettingsPreferenceFragment implements
     }
 
     private void enableStatusBarBatteryDependents(int batteryIconStyle) {
-        if (batteryIconStyle == STATUS_BAR_BATTERY_STYLE_TEXT) {
+        if (batteryIconStyle == STATUS_BAR_BATTERY_STYLE_TEXT
+                || batteryIconStyle == STATUS_BAR_BATTERY_STYLE_HIDDEN) {
             mStatusBarBatteryShowPercent.setEnabled(false);
         } else {
             mStatusBarBatteryShowPercent.setEnabled(true);
