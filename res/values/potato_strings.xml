@@ -46,4 +46,9 @@
     <string name="encryption_and_credential_settings_summary_disabled" product="default">Phone is not encrypted</string>
     <!-- Security Settings screen Encryption and crendential summary -->
     <string name="encryption_and_credential_settings_summary_disabled" product="tablet">Device is not encrypted</string>
+
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevent accidental wake-up</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+
 </resources>
