@@ -46,6 +46,21 @@
                 android:resource="@string/rootmanagement_dashboard_summary" />
         </activity>
 
+        <!-- Dirty Tweaks -->
+        <activity android:name="Settings$PotatoWedgesActivity"
+                android:label="@string/title_wedges"
+                android:icon="@drawable/ic_potato">
+            <intent-filter android:priority="10">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.homepage"/>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.potato.wedges.PotatoWedges" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/wedges_summary" />
+        </activity>
+
         <!-- Global navbar settings -->
         <activity android:name="Settings$NavigationSettingsActivity"
                 android:label="@string/bottom_nav_navigation_title"
