@@ -46,7 +46,7 @@
                 android:resource="@string/rootmanagement_dashboard_summary" />
         </activity>
 
-        <!-- Dirty Tweaks -->
+        <!-- Potato Wedges -->
         <activity android:name="Settings$PotatoWedgesActivity"
                 android:label="@string/title_wedges"
                 android:icon="@drawable/ic_potato">
@@ -63,7 +63,7 @@
 
         <!-- Global navbar settings -->
         <activity android:name="Settings$NavigationSettingsActivity"
-                android:label="@string/bottom_nav_navigation_title"
+                android:label="@string/navigation_main"
                 android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
