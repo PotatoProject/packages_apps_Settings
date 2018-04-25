@@ -21,4 +21,12 @@
 
     <!-- Volume settings - Volume adjustment sound -->
     <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+
+    <!-- Whether to override specific vendor properties for
+         displaying information in about phone. Supported properties include:
+         Device Model(String) = "config_overridenVendorProductModel"
+         Security Patch = "ro.vendor.override.security_patch"
+         Build number = "ro.vendor.override.build_display"
+    -->
+    <string name="config_overridenVendorProductModel" translatable="false"></string>
 </resources>
