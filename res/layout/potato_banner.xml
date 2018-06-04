@@ -6,7 +6,7 @@
 
     <ImageView
         android:adjustViewBounds="true"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:layout_width="625dp"
         android:scaleType="centerInside"
         android:src="@drawable/potato_banner"
