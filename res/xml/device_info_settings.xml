@@ -21,6 +21,9 @@
                 android:key="potato_banner"
                 android:layout="@layout/potato_banner" />
 
+        <Preference android:key="potato_version"
+                    android:title="@string/potato_version_title" />
+
         <!-- System update settings - launches activity -->
         <Preference android:key="additional_system_update_settings"
                     android:title="@string/additional_system_update_settings_list_item_title">

@@ -38,4 +38,7 @@
     <!-- Lock screen vibrate settings -->
     <string name="lockscreen_vibrate_enabled_title">Vibrate</string>
     <string name="lockscreen_vibrate_enabled_head">Vibrate when unlocking</string>
+
+    <!-- POSP version preference -->
+    <string name="potato_version_title">Potato Open Sauce Project</string>
 </resources>
