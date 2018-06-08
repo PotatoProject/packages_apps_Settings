@@ -27,6 +27,7 @@ import com.android.settings.R;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.DeviceInfoUtils;
 import com.android.settingslib.core.AbstractPreferenceController;
+import java.util.Objects;
 
 public class PotatoVersionPreferenceController extends AbstractPreferenceController implements
         PreferenceControllerMixin {
@@ -50,8 +51,15 @@ public class PotatoVersionPreferenceController extends AbstractPreferenceControl
         super.displayPreference(screen);
         final Preference pref = screen.findPreference(KEY_POTATO_VERSION);
         if (pref != null) {
-            pref.setSummary(SystemProperties.get("persist.potato.dish", "") + " - v"
-                            + SystemProperties.get("persist.potato.version", ""));
+            String summary;
+            if (Objects.equals(SystemProperties.get("persist.potato.community"), "true")) {
+            summary = SystemProperties.get("persist.potato.dish") + " (Chips) - v"
+                            + SystemProperties.get("persist.potato.version");
+            } else {
+            summary = SystemProperties.get("persist.potato.dish") + " - v"
+                            + SystemProperties.get("persist.potato.version");
+            }
+            pref.setSummary(summary);
         }
     }
 
