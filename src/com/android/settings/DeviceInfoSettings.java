@@ -22,7 +22,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.provider.SearchIndexableResource;
 import android.os.Build;
-import android.text.TextUtils;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.dashboard.DashboardFragment;
@@ -43,7 +42,6 @@ import com.android.settings.deviceinfo.SafetyInfoPreferenceController;
 import com.android.settings.deviceinfo.SecurityPatchPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
-import com.android.settingslib.DeviceInfoUtils;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
@@ -95,28 +93,16 @@ public class DeviceInfoSettings extends DashboardFragment implements Indexable {
 
     private static class SummaryProvider implements SummaryLoader.SummaryProvider {
 
-        private final Context mContext;
         private final SummaryLoader mSummaryLoader;
 
-        public SummaryProvider(Context context, SummaryLoader summaryLoader) {
-            mContext = context;
+        public SummaryProvider(SummaryLoader summaryLoader) {
             mSummaryLoader = summaryLoader;
-        }
-
-        public String getDeviceModel() {
-            String modelOverride = mContext.getResources().getString(
-                R.string.config_overridenVendorProductModel);
-            if (!TextUtils.isEmpty(modelOverride)) {
-                return modelOverride;
-            } else {
-                return Build.MODEL + DeviceInfoUtils.getMsvSuffix();
-            }
         }
 
         @Override
         public void setListening(boolean listening) {
             if (listening) {
-                mSummaryLoader.setSummary(this, getDeviceModel());
+                mSummaryLoader.setSummary(this, DeviceModelPreferenceController.getDeviceModel());
             }
         }
     }
@@ -126,7 +112,7 @@ public class DeviceInfoSettings extends DashboardFragment implements Indexable {
         @Override
         public SummaryLoader.SummaryProvider createSummaryProvider(Activity activity,
                 SummaryLoader summaryLoader) {
-            return new SummaryProvider(activity, summaryLoader);
+            return new SummaryProvider(summaryLoader);
         }
     };
 
