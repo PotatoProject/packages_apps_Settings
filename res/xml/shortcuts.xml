@@ -16,6 +16,15 @@
   -->
 <shortcuts xmlns:android="http://schemas.android.com/apk/res/android" >
     <shortcut
+            android:shortcutId="manifest-shortcut-wedges"
+            android:icon="@drawable/ic_potato"
+            android:shortcutShortLabel="@string/title_wedges">
+        <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.Settings$PotatoWedgesActivity" />
+    </shortcut>
+    <shortcut
         android:shortcutId="manifest-shortcut-wifi"
         android:icon="@drawable/ic_shortcut_wireless"
         android:shortcutShortLabel="@string/wifi_settings" >
