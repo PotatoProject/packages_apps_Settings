@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9acff435_1bc11bb7",
+        "filename": "res/drawable/ic_shortcut_wedges.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2018-06-19T15:48:30Z",
+      "side": 1,
+      "message": "Also, I guess making viewport dimensions to 400 should fix up the weird icon issue.",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 42
+      },
+      "revId": "256c259e25815ec7b1905889f8b7e5855a74b215",
+      "serverId": "8720d348-3d66-43e6-b480-1d69039ac554",
+      "unresolved": true
+    }
+  ]
+}
