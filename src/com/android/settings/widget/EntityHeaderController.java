@@ -82,6 +82,7 @@ public class EntityHeaderController {
     private String mIconContentDescription;
     private CharSequence mLabel;
     private CharSequence mSummary;
+	private String mVersion;
     private String mPackageName;
     private Intent mAppNotifPrefIntent;
     @UserIdInt
@@ -208,6 +209,13 @@ public class EntityHeaderController {
         return this;
     }
 
+	public EntityHeaderController setVersion(String version) {
+        if (!version.equals("")) {
+            mVersion = version;
+        }
+        return this;
+    }
+
     /**
      * Done mutating entity header, rebinds everything and return a new {@link LayoutPreference}.
      */
@@ -232,6 +240,7 @@ public class EntityHeaderController {
         }
         setText(R.id.entity_header_title, mLabel);
         setText(R.id.entity_header_summary, mSummary);
+		setText(R.id.app_version, mVersion);
         if (mIsInstantApp) {
             setText(R.id.install_type,
                     mHeader.getResources().getString(R.string.install_type_instant));
