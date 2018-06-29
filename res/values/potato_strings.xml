@@ -15,13 +15,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Root Management -->
-    <string name="rootmanagement_title">Root management</string>
-    <string name="rootmanagement_dashboard_summary">Manage root access</string>
-
-    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
-    <string name="supersu_title">SuperSU</string>
-
     <!-- Sizes for pattern lockscreen -->
     <string name="lock_pattern_size_3" translatable="false">3 \u00d7 3</string>
     <string name="lock_pattern_size_4" translatable="false">4 \u00d7 4</string>
