@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2dc140dc_bb0bba88",
+        "filename": "src/com/android/settings/notification/VolumeAdjustmentTonePreferenceController.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2018-06-29T06:36:31Z",
+      "side": 1,
+      "message": "Isn\u0027t there something like `DEFAULT_OFF` to make this a bit cleaner?",
+      "range": {
+        "startLine": 35,
+        "startChar": 88,
+        "endLine": 35,
+        "endChar": 89
+      },
+      "revId": "62fe5b1d911d624d58bfc043fac327443638c55d",
+      "serverId": "8720d348-3d66-43e6-b480-1d69039ac554",
+      "unresolved": true
+    }
+  ]
+}
