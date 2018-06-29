@@ -191,8 +191,6 @@ public class Settings extends SettingsActivity {
     public static class UserAndAccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
 
-    // Potato Activities
-    public static class RootManagementActivity extends SettingsActivity { /* empty */ }
     public static class PotatoWedgesActivity extends SettingsActivity { /* empty */ }
     public static class NavigationSettingsActivity extends SettingsActivity { /* empty */ }
     public static class FlingSettingsActivity extends SettingsActivity { /* empty */ }
