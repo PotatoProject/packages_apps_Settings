@@ -22,5 +22,5 @@
     <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
     <string name="supersu_title">超级用户</string>
 
-    <string name="wireless_charging_sounds_title">无线充电声音</string>
+    <string name="wireless_charging_sounds_title">无线充电提示音</string>
 </resources>
