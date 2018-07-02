@@ -14,13 +14,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Security Settings screen Encryption and crendential summary -->
+    
+    <string name="encryption_and_credential_settings_summary_disabled" product="default">手机未加密</string>
+    <!-- Security Settings screen Encryption and crendential summary -->
+    <string name="encryption_and_credential_settings_summary_disabled" product="tablet">设备未加密</string>
 
-    <!-- Root Management -->
-    <string name="rootmanagement_title">授权管理</string>
-    <string name="rootmanagement_dashboard_summary">管理ROOT权限</string>
+    <string name="wireless_charging_sounds_title">无线充电提示音</string>
 
-    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
-    <string name="supersu_title">超级用户</string>
-
-    <string name="wireless_charging_sounds_title">无线充电声音</string>
 </resources>

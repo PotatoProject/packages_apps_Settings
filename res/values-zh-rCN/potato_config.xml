@@ -17,6 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Volume settings - Volume adjustment sound -->
-    <string name="volume_adjust_sounds_title">音量调节声音</string>
+    <string name="volume_adjust_sounds_title">音量调节提示音</string>
     
 </resources>
