@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "75d51149_efcaf548",
+        "filename": "res/values-zh-rCN/potato_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2018-07-02T10:35:27Z",
+      "side": 1,
+      "message": "Root management has been removed with I54488f6478d146d88a9573ad54c135d8ac777cef and Ib8df8fa45d305fc231a10c60b416fe37332dc80e",
+      "range": {
+        "startLine": 18,
+        "startChar": 4,
+        "endLine": 20,
+        "endChar": 69
+      },
+      "revId": "0013108df6d24772fd9aafe0bc40206ece68c5a6",
+      "serverId": "8720d348-3d66-43e6-b480-1d69039ac554",
+      "unresolved": true
+    }
+  ]
+}
