@@ -22,6 +22,29 @@
       "revId": "0013108df6d24772fd9aafe0bc40206ece68c5a6",
       "serverId": "8720d348-3d66-43e6-b480-1d69039ac554",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "07a16485_d00f83db",
+        "filename": "res/values-zh-rCN/potato_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2018-07-02T10:36:20Z",
+      "side": 1,
+      "message": "As said earlier root management has been removed, and also this string wasn\u0027t supposed to be translated at all (as you can tell by the comment)",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 46
+      },
+      "revId": "0013108df6d24772fd9aafe0bc40206ece68c5a6",
+      "serverId": "8720d348-3d66-43e6-b480-1d69039ac554",
+      "unresolved": true
     }
   ]
 }
