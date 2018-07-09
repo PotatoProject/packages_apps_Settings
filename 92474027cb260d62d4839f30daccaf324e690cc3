@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b6083b5d_499669b1",
+        "filename": "src/com/android/settings/IccLockSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2018-07-09T07:14:34Z",
+      "side": 1,
+      "message": "So here we\u0027re creating a String which is gonna be converted back to an int without even changing it in like 90% of all cases...",
+      "range": {
+        "startLine": 236,
+        "startChar": 18,
+        "endLine": 236,
+        "endChar": 35
+      },
+      "revId": "92474027cb260d62d4839f30daccaf324e690cc3",
+      "serverId": "8720d348-3d66-43e6-b480-1d69039ac554",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d432554e_87c3d538",
+        "filename": "src/com/android/settings/IccLockSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 242,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2018-07-09T07:14:34Z",
+      "side": 1,
+      "message": "Comment 2: BUT WHY FOR HEAVENS SAKE ARE WE JUST ASSUMING THAT IT IS ALWAYS GONNA BE AN INT?! Even if it might be true with our current implementation this seems like a pretty dumb thing to do to me",
+      "range": {
+        "startLine": 242,
+        "startChar": 20,
+        "endLine": 242,
+        "endChar": 48
+      },
+      "revId": "92474027cb260d62d4839f30daccaf324e690cc3",
+      "serverId": "8720d348-3d66-43e6-b480-1d69039ac554",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "34fd6b79_3f13e93c",
+        "filename": "src/com/android/settings/IccLockSettings.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 337,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2018-07-09T07:14:34Z",
+      "side": 1,
+      "message": "Comment 1: Okay, this TabTag is a string, that makes sense to me.",
+      "range": {
+        "startLine": 337,
+        "startChar": 16,
+        "endLine": 337,
+        "endChar": 63
+      },
+      "revId": "92474027cb260d62d4839f30daccaf324e690cc3",
+      "serverId": "8720d348-3d66-43e6-b480-1d69039ac554",
+      "unresolved": true
+    }
+  ]
+}
