@@ -69,6 +69,7 @@
     <string name="hardware_keys_category">Hardware keys</string>
     <string name="hardware_keys_disable_title">Disable keys</string>
 
-    <!-- Navbar tuner -->
-    <string name="navbar_tuner_title">Navbar buttons</string>
+    <!-- Navbar -->
+    <string name="navbar_tuner_title">System navigation bar</string>
+    <string name="navbar_visibility">Allow navigation bar</string>
 </resources>

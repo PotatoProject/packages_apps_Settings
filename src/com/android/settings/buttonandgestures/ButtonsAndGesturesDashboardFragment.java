@@ -27,6 +27,7 @@ import android.content.res.Resources;
 import android.hardware.fingerprint.FingerprintManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.support.v14.preference.SwitchPreference;
@@ -66,6 +67,7 @@ public class ButtonsAndGesturesDashboardFragment extends ActionFragment implemen
     private static final String KEY_BUTTON_BRIGHTNESS_SW = "button_brightness_sw";
     private static final String KEY_BACKLIGHT_TIMEOUT = "backlight_timeout";
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
+    private static final String NAVBAR_VISIBILITY = "navbar_visibility";
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";
@@ -91,6 +93,9 @@ public class ButtonsAndGesturesDashboardFragment extends ActionFragment implemen
     private CustomSeekBarPreference mButtonBrightness;
     private SwitchPreference mButtonBrightness_sw;
     private SwitchPreference mHwKeyDisable;
+    private SwitchPreference mNavbarVisibility;
+    private boolean mIsNavSwitchingMode = false;
+    private Handler mHandler;
 
     @Override
     public int getMetricsCategory() {
@@ -101,6 +106,15 @@ public class ButtonsAndGesturesDashboardFragment extends ActionFragment implemen
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.buttons_and_gestures);
+
+        mNavbarVisibility = (SwitchPreference) findPreference(NAVBAR_VISIBILITY);
+
+        boolean showing = Settings.Secure.getInt(getContentResolver(),
+                Settings.Secure.NAVIGATION_BAR_VISIBLE,
+                ActionUtils.hasNavbarByDefault(getActivity()) ? 1 : 0) != 0;
+        updateBarVisibleAndUpdatePrefs(showing);
+        mNavbarVisibility.setOnPreferenceChangeListener(this);
+        mHandler = new Handler();
 
         final Resources res = getResources();
         final ContentResolver resolver = getActivity().getContentResolver();
@@ -214,6 +228,10 @@ public class ButtonsAndGesturesDashboardFragment extends ActionFragment implemen
         setActionPreferencesEnabled(keysDisabled == 0);
     }
 
+    private void updateBarVisibleAndUpdatePrefs(boolean showing) {
+        mNavbarVisibility.setChecked(showing);
+    }
+
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mBacklightTimeout) {
@@ -241,6 +259,22 @@ public class ButtonsAndGesturesDashboardFragment extends ActionFragment implemen
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.HARDWARE_KEYS_DISABLE,
                     value ? 1 : 0);
             setActionPreferencesEnabled(!value);
+            return true;
+        } else if (preference == mNavbarVisibility) {
+            if (mIsNavSwitchingMode) {
+                return false;
+            }
+            mIsNavSwitchingMode = true;
+            boolean showing = ((Boolean)newValue);
+            Settings.Secure.putInt(getContentResolver(), Settings.Secure.NAVIGATION_BAR_VISIBLE,
+                    showing ? 1 : 0);
+            updateBarVisibleAndUpdatePrefs(showing);
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mIsNavSwitchingMode = false;
+                }
+            }, 1500);
             return true;
         }
         return false;
