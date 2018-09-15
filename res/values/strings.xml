@@ -10080,4 +10080,8 @@
 
     <!-- Title for Connected device shortcut [CHAR LIMIT=30] -->
     <string name="devices_title">Devices</string>
+
+    <!-- Button and Gesture Settings -->
+    <string name="buttons_and_gestures_dashboard_title">Buttons &amp; gestures"</string>
+    <string name="buttons_and_gestures_dashboard_summary">Navigation keys, gestures</string>
 </resources>
