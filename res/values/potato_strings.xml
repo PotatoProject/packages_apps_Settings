@@ -10,6 +10,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -71,4 +72,14 @@
 
     <!-- Navbar -->
     <string name="navbar_visibility">Allow navigation bar</string>
+
+	<!-- Custom POSP Details -->
+    <string name="potato_version_dish">Version Name</string>
+    <string name="potato_number">Version Number</string>
+    <string name="build_status">Build Status</string>
+    <string name="maintainer_name">Maintainer Name</string>
+    <string name="host_name">Build Host</string>
+    <string name="build_type">Build Type</string>
+    <string name="build_date">Build Date</string>
+    <string name="potato_title">POSP</string>
 </resources>
