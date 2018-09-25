@@ -20,4 +20,9 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
+
+    <!-- Hardware keys -->
+    <string name="hardware_keys_category">Hardware keys</string>
+    <!-- Enable keys backlight-->
+    <string name="button_brightness_title">Backlight</string>
 </resources>
