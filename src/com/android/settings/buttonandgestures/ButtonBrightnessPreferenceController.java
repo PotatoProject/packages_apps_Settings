@@ -12,7 +12,7 @@
  * KIND, either express or implied. See the License for the specific language governing
  * permissions and limitations under the License.
  */
-package com.android.settings.display;
+package com.android.settings.buttonandgestures;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -55,9 +55,9 @@ public class ButtonBrightnessPreferenceController extends AbstractPreferenceCont
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         mButtonBrightness =
-                (CustomSeekBarPreference) findPreference(KEY_BUTTON_BRIGHTNESS);
+                (CustomSeekBarPreference) screen.findPreference(KEY_BUTTON_BRIGHTNESS);
         if (mButtonBrightness != null) {
-            int ButtonBrightness = Settings.System.getInt(getContentResolver(),
+            int ButtonBrightness = Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.BUTTON_BRIGHTNESS, 255);
             mButtonBrightness.setValue(ButtonBrightness / 1);
             mButtonBrightness.setOnPreferenceChangeListener(this);
@@ -68,7 +68,7 @@ public class ButtonBrightnessPreferenceController extends AbstractPreferenceCont
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mButtonBrightness) {
             int value = (Integer) newValue;
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.BUTTON_BRIGHTNESS, value * 1);
             return true;
         }

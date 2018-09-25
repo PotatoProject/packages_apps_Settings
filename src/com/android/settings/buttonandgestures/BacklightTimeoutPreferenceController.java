@@ -12,12 +12,13 @@
  * KIND, either express or implied. See the License for the specific language governing
  * permissions and limitations under the License.
  */
-package com.android.settings.display;
+package com.android.settings.buttonandgestures;
 
 import android.content.Context;
 import android.content.ContentResolver;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.provider.Settings;
@@ -43,7 +44,7 @@ public class BacklightTimeoutPreferenceController extends AbstractPreferenceCont
 
     @Override
     public String getPreferenceKey() {
-        return KEY_BUTTON_BRIGHTNESS;
+        return KEY_BACKLIGHT_TIMEOUT;
     }
 
     @Override
@@ -55,10 +56,10 @@ public class BacklightTimeoutPreferenceController extends AbstractPreferenceCont
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         mBacklightTimeout =
-                (ListPreference) findPreference(KEY_BACKLIGHT_TIMEOUT);
+                (ListPreference) screen.findPreference(KEY_BACKLIGHT_TIMEOUT);
         if (mBacklightTimeout != null) {
             mBacklightTimeout.setOnPreferenceChangeListener(this);
-            int BacklightTimeout = Settings.System.getInt(getContentResolver(),
+            int BacklightTimeout = Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 5000);
             mBacklightTimeout.setValue(Integer.toString(BacklightTimeout));
             mBacklightTimeout.setSummary(mBacklightTimeout.getEntry());
@@ -70,7 +71,7 @@ public class BacklightTimeoutPreferenceController extends AbstractPreferenceCont
         if (preference == mBacklightTimeout) {
             String BacklightTimeout = (String) newValue;
             int BacklightTimeoutValue = Integer.parseInt(BacklightTimeout);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.BUTTON_BACKLIGHT_TIMEOUT, BacklightTimeoutValue);
             int BacklightTimeoutIndex = mBacklightTimeout
                     .findIndexOfValue(BacklightTimeout);

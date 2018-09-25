@@ -29,8 +29,8 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
-import com.android.settings.buttonsandgestures.ButtonBrightnessPreferenceController;
-import com.android.settings.buttonsandgestures.BacklightTimeoutPreferenceController;
+import com.android.settings.buttonandgestures.ButtonBrightnessPreferenceController;
+import com.android.settings.buttonandgestures.BacklightTimeoutPreferenceController;
 
 import java.util.ArrayList;
 import java.util.Arrays;
