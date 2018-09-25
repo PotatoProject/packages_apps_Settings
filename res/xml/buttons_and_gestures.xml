@@ -20,4 +20,16 @@
     android:key="buttons_and_gestures_screen"
     android:title="@string/buttons_and_gestures_dashboard_title">
 
+    <PreferenceCategory
+        android:key="hardware_keys"
+        android:title="@string/hardware_keys_category">
+        <com.potato.wedges.preferences.CustomSeekBarPreference
+            android:key="button_brightness"
+            android:title="@string/button_brightness_title"
+            android:max="255"
+            settings:min="0"
+            settings:units=""
+            android:persistent="false" />
+     </PreferenceCategory>
+
 </PreferenceScreen>
