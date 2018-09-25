@@ -30,6 +30,7 @@ import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
 import com.android.settings.buttonsandgestures.ButtonBrightnessPreferenceController;
+import com.android.settings.buttonsandgestures.BacklightTimeoutPreferenceController;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -63,6 +64,7 @@ public class ButtonsAndGesturesDashboardFragment extends DashboardFragment {
             Lifecycle lifecycle) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new ButtonBrightnessPreferenceController(context));
+        controllers.add(new BacklightTimeoutPreferenceController(context));
         return controllers;
     }
 
