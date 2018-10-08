@@ -117,4 +117,6 @@
     <string name="torch_power_button_gesture_dt">Double tap power to toggle torch</string>
     <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
 
+    <!-- Toolbar -->
+    <string name="settings_head_title">POSP</string>
 </resources>
