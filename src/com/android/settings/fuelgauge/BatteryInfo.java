@@ -220,7 +220,7 @@ public class BatteryInfo {
         info.batteryLevel = Utils.getBatteryLevel(batteryBroadcast);
         info.batteryPercentString = Utils.formatPercentage(info.batteryLevel);
         info.mCharging = batteryBroadcast.getIntExtra(BatteryManager.EXTRA_PLUGGED, 0) != 0;
-        info.averageTimeToDischarge = estimate.averageDischargeTime;
+        if (estimate != null) info.averageTimeToDischarge = estimate.averageDischargeTime;
         final Resources resources = context.getResources();
 
         info.statusLabel = Utils.getBatteryStatus(resources, batteryBroadcast);
@@ -260,21 +260,26 @@ public class BatteryInfo {
 
     private static void updateBatteryInfoDischarging(Context context, boolean shortString,
             Estimate estimate, BatteryInfo info) {
-        final long drainTimeUs = PowerUtil.convertMsToUs(estimate.estimateMillis);
-        if (drainTimeUs > 0) {
-            info.remainingTimeUs = drainTimeUs;
-            info.remainingLabel = PowerUtil.getBatteryRemainingStringFormatted(
-                    context,
-                    PowerUtil.convertUsToMs(drainTimeUs),
-                    null /* percentageString */,
-                    estimate.isBasedOnUsage && !shortString
-            );
-            info.chargeLabel = PowerUtil.getBatteryRemainingStringFormatted(
-                    context,
-                    PowerUtil.convertUsToMs(drainTimeUs),
-                    info.batteryPercentString,
-                    estimate.isBasedOnUsage && !shortString
-            );
+        if(estimate != null) {
+        long drainTimeUs = PowerUtil.convertMsToUs(estimate.estimateMillis);
+            if (drainTimeUs > 0) {
+                info.remainingTimeUs = drainTimeUs;
+                info.remainingLabel = PowerUtil.getBatteryRemainingStringFormatted(
+                        context,
+                        PowerUtil.convertUsToMs(drainTimeUs),
+                        null /* percentageString */,
+                        estimate.isBasedOnUsage && !shortString
+                );
+                info.chargeLabel = PowerUtil.getBatteryRemainingStringFormatted(
+                        context,
+                        PowerUtil.convertUsToMs(drainTimeUs),
+                        info.batteryPercentString,
+                        estimate.isBasedOnUsage && !shortString
+                );
+            } else {
+                info.remainingLabel = null;
+                info.chargeLabel = info.batteryPercentString;
+            }
         } else {
             info.remainingLabel = null;
             info.chargeLabel = info.batteryPercentString;
