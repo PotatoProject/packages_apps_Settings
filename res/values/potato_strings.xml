@@ -117,4 +117,8 @@
     <string name="torch_power_button_gesture_dt">Double tap power to toggle torch</string>
     <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
 
+    <!-- Option defining the phone ringtone for slot1 on Muilti SIM device -->
+    <string name="ringtone1_title">Phone ringtone - SIM 1</string>
+    <string name="ringtone2_title">Phone ringtone - SIM 2</string>
+
 </resources>
