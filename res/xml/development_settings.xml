@@ -321,6 +321,12 @@
             android:title="@string/debug_layout"
             android:summary="@string/debug_layout_summary" />
 
+        <com.potato.fries.preferences.GlobalSettingSwitchPreference
+            android:key="show_cpu_overlay"
+            android:title="@string/show_cpu_info"
+            android:summary="@string/show_cpu_info_summary"
+            android:defaultValue="false" />
+
         <SwitchPreference
             android:key="force_rtl_layout_all_locales"
             android:title="@string/force_rtl_layout_all_locales"
