@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.havoc;
+package com.android.settings.ambient;
 
 import android.content.Context;
 import android.provider.Settings;
