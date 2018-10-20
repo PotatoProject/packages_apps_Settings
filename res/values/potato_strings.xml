@@ -192,4 +192,8 @@
     <string name="ambient_recognition_interval_80sec">1 minute 20 seconds</string>
     <string name="ambient_recognition_interval_100sec">1 minute 40 seconds</string>
     <string name="ambient_recognition_interval_120sec">2 minutes</string>
+
+    <!-- Now playing -->
+    <string name="ambient_play_settings_title">Check out \"Now Playing\"</string>
+    <string name="ambient_play_settings_summary">Be notified of music being played around you</string>
 </resources>
