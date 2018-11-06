@@ -203,4 +203,7 @@
     <!-- Smart Clock -->
     <string name="use_smart_clock">Smart Clock</string>
     <string name="use_smart_clock_summary">Show statusbar clock periodically (Particularly useful on devices with notched displays)</string>
+
+    <!-- Theme custom -->
+    <string name="base_theme">Base colors</string>
 </resources>
