@@ -77,4 +77,14 @@
             android:title="@string/date_time_24hour" />
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="time_customisation_preference_category"
+        android:layout="@layout/preference_category_no_label">
+        <com.potato.wedges.preferences.SystemSettingSwitchPreference
+            android:key="smart_clock_enable"
+            android:title="@string/use_smart_clock"
+            android:summary="@string/use_smart_clock_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
