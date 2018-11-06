@@ -146,6 +146,11 @@
         android:persistent="false" />
 
     <ListPreference
+        android:key="base_theme"
+        android:title="@string/base_theme"
+        android:summary="@string/summary_placeholder" />
+
+    <ListPreference
         android:key="theme"
         android:title="@string/color_theme"
         android:summary="@string/summary_placeholder" />
