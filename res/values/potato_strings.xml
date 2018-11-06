@@ -200,4 +200,7 @@
     <string name="ambient_play_history_menu_add_to_home">Add to Home Screen</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Are you sure?</string>
 
+    <!-- Smart Clock -->
+    <string name="use_smart_clock">Smart Clock</string>
+    <string name="use_smart_clock_summary">Show statusbar clock periodically (Particularly useful on devices with notched displays)</string>
 </resources>
