@@ -162,6 +162,12 @@
         android:entryValues="@array/systemui_theme_values"
         settings:controller="com.android.settings.display.SystemUiThemePreferenceController" />
 
+    <com.potato.wedges.preferences.SystemSettingSwitchPreference
+        android:key="prefer_black_themes"
+        android:title="@string/prefer_black_themes"
+        android:summary="@string/prefer_black_themes_summary"
+        android:defaultValue="false" />
+
     <Preference
         android:key="vr_display_pref"
         android:title="@string/display_vr_pref_title"

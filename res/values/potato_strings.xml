@@ -206,4 +206,8 @@
 
     <!-- Theme custom -->
     <string name="base_theme">Base colors</string>
+    <string name="prefer_black_themes">Prefer black themes</string>
+    <string name="prefer_black_themes_summary">Use black theme overlays instead of dark ones when possible</string>
+
+
 </resources>
