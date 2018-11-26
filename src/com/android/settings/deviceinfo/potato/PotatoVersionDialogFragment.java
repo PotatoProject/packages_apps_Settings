@@ -45,7 +45,7 @@ public class PotatoVersionDialogFragment extends InstrumentedDialogFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.POTATO_WEDGES;
+        return MetricsProto.MetricsEvent.FRIES;
     }
 
     @Override

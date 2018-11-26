@@ -93,7 +93,7 @@ public class AmbientPlaySettings extends SettingsPreferenceFragment implements C
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.POTATO_WEDGES;
+        return MetricsEvent.FRIES;
     }
 
     private boolean isEnabled() {
