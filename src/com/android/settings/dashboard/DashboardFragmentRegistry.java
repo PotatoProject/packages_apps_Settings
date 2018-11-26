@@ -40,6 +40,8 @@ import com.android.settings.security.SecuritySettings;
 import com.android.settings.system.SystemDashboardFragment;
 import com.android.settingslib.drawer.CategoryKey;
 
+import com.potato.fries.FriesDashboardFragment;
+
 import java.util.Map;
 
 /**
@@ -67,6 +69,8 @@ public class DashboardFragmentRegistry {
                 CategoryKey.CATEGORY_CONNECT);
         PARENT_TO_CATEGORY_KEY_MAP.put(AdvancedConnectedDeviceDashboardFragment.class.getName(),
                 CategoryKey.CATEGORY_DEVICE);
+        PARENT_TO_CATEGORY_KEY_MAP.put(FriesDashboardFragment.class.getName(),
+                CategoryKey.CATEGORY_SYSTEM);
         PARENT_TO_CATEGORY_KEY_MAP.put(AppAndNotificationDashboardFragment.class.getName(),
                 CategoryKey.CATEGORY_APPS);
         PARENT_TO_CATEGORY_KEY_MAP.put(PowerUsageSummary.class.getName(),
