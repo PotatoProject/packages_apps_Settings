@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "00279e0d_b24aa0c4",
+        "filename": "res/drawable/ic_delete_grey600_24dp.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2018-11-26T07:47:33Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 17,
+        "startChar": 29,
+        "endLine": 17,
+        "endChar": 33
+      },
+      "revId": "482170ed816e36f4bd0d430d5c2d0f976d72c707",
+      "serverId": "8720d348-3d66-43e6-b480-1d69039ac554",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "857df952_2cf84ce8",
+        "filename": "res/drawable/ic_magnify_grey600_24dp.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2018-11-26T07:47:33Z",
+      "side": 1,
+      "message": "again",
+      "range": {
+        "startLine": 17,
+        "startChar": 29,
+        "endLine": 17,
+        "endChar": 33
+      },
+      "revId": "482170ed816e36f4bd0d430d5c2d0f976d72c707",
+      "serverId": "8720d348-3d66-43e6-b480-1d69039ac554",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "de2ac9cc_bc59c45f",
+        "filename": "res/drawable/ic_play_grey600_24dp.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2018-11-26T07:47:33Z",
+      "side": 1,
+      "message": "oh boi",
+      "range": {
+        "startLine": 17,
+        "startChar": 29,
+        "endLine": 17,
+        "endChar": 33
+      },
+      "revId": "482170ed816e36f4bd0d430d5c2d0f976d72c707",
+      "serverId": "8720d348-3d66-43e6-b480-1d69039ac554",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f1b1ad44_275abd95",
+        "filename": "res/drawable/now_playing_history.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2018-11-26T07:47:33Z",
+      "side": 1,
+      "message": "hmm",
+      "range": {
+        "startLine": 17,
+        "startChar": 29,
+        "endLine": 17,
+        "endChar": 33
+      },
+      "revId": "482170ed816e36f4bd0d430d5c2d0f976d72c707",
+      "serverId": "8720d348-3d66-43e6-b480-1d69039ac554",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2801b30c_12b8cbbd",
+        "filename": "res/drawable/quantum_ic_music_note_grey600_24.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2018-11-26T07:47:33Z",
+      "side": 1,
+      "message": "oh",
+      "range": {
+        "startLine": 17,
+        "startChar": 29,
+        "endLine": 17,
+        "endChar": 33
+      },
+      "revId": "482170ed816e36f4bd0d430d5c2d0f976d72c707",
+      "serverId": "8720d348-3d66-43e6-b480-1d69039ac554",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ec8f9c3e_f3060c4c",
+        "filename": "res/drawable/quantum_ic_music_note_grey600_24.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2018-11-26T07:47:33Z",
+      "side": 1,
+      "message": "This has got 2 wew",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 1
+      },
+      "revId": "482170ed816e36f4bd0d430d5c2d0f976d72c707",
+      "serverId": "8720d348-3d66-43e6-b480-1d69039ac554",
+      "unresolved": true
+    }
+  ]
+}
