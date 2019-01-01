@@ -19,8 +19,11 @@
 
     <item>
         <shape android:shape="oval">
-            <solid
-                android:color="@color/homepage_system_background" />
+            <gradient
+                android:angle="315"
+                android:startColor="#2c3e50"
+                android:endColor="#bdc3c7"
+                android:type="linear" />
             <size
                 android:width="@dimen/dashboard_tile_image_size"
                 android:height="@dimen/dashboard_tile_image_size" />
