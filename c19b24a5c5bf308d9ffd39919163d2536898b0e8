@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1d49e4ad_f24e2923",
+        "filename": "res/xml/power_usage_summary.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2019-01-03T17:14:02Z",
+      "side": 0,
+      "message": "Might wanna also nuke the corresponding Settings code for this",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 67
+      },
+      "revId": "c19b24a5c5bf308d9ffd39919163d2536898b0e8",
+      "serverId": "8720d348-3d66-43e6-b480-1d69039ac554",
+      "unresolved": true
+    }
+  ]
+}
