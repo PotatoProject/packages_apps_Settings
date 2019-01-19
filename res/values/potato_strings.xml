@@ -103,4 +103,8 @@
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
 
+	<!-- Battery temp -->
+    <string name="battery_temp_title">Battery temperature</string>
+    <string name="battery_temp_summary">Tap to switch scale</string>
+
 </resources>
