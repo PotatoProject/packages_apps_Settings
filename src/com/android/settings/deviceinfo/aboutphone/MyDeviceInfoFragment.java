@@ -153,6 +153,10 @@ public class MyDeviceInfoFragment extends DashboardFragment
         final LayoutPreference headerPreference =
                 (LayoutPreference) getPreferenceScreen().findPreference(KEY_MY_DEVICE_INFO_HEADER);
         final View appSnippet = headerPreference.findViewById(R.id.entity_header);
+        boolean isMultiUserV2 = mMultiUserVersion == UserManager.MULTI_USER_V2;
+        mHeaderPreference =
+                (LayoutPreference) getPreferenceScreen().findPreference(KEY_MY_DEVICE_INFO_HEADER);
+        mHeaderPreference.setLayout(isMultiUserV2 ? R.layout.settings_entity_header_centered : R.layout.settings_entity_header);
         final Activity context = getActivity();
         final Bundle bundle = getArguments();
         EntityHeaderController controller = EntityHeaderController
@@ -170,6 +174,18 @@ public class MyDeviceInfoFragment extends DashboardFragment
             controller.setLabel(info.name);
             controller.setIcon(
                     com.android.settingslib.Utils.getUserIcon(getActivity(), userManager, info));
+            if (isMultiUserV2) {
+                controller.setIconAction(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            new SubSettingLauncher(getContext())
+                                    .setDestination(UserSettings.class.getName())
+                                    .setSourceMetricsCategory(getMetricsCategory())
+                                    .setTitle(R.string.user_settings_title)
+                                    .launch();
+                        }
+                });
+            }
         }
 
         controller.done(context, true /* rebindActions */);
