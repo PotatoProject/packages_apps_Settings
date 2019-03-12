@@ -51,7 +51,6 @@ public class PotatoVersionDialogFragment extends InstrumentedDialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
-                .setTitle(R.string.potato_title)
                 .setPositiveButton(android.R.string.ok, null /* listener */);
 
         mRootView = LayoutInflater.from(getActivity()).inflate(
