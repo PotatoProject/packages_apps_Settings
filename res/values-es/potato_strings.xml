@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2019 The Potato Open Sauce Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- Custom POSP Details -->
+    <string name="potato_version_dish">Nombre de la versión</string>
+    <string name="potato_number">Número de versión</string>
+    <string name="build_status">Estado de la compilación</string>
+    <string name="maintainer_name">Nombre del mantenedor</string>
+    <string name="host_name">Nombre del ordenador</string>
+    <string name="build_type">Tipo de compilación</string>
+    <string name="build_date">Fecha de compilación</string>
+    <string name="potato_title">POSP</string>
+
+    <!-- Volume settings - Volume adjustment sound -->
+    <string name="volume_adjust_sounds_title">Sonidos de ajuste de volumen</string>
+
+    <!-- Scramble PIN Layout on Lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Diseño scramble</string>
+    <string name="unlock_scramble_pin_layout_summary">Desbloquear el diseño scramble del PIN al desbloquear el dispositivo</string>
+
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Desbloqueo rapido</string>
+    <string name="unlock_quick_unlock_control_summary">Desbloquear automáticamente cuando se ingresa el PIN / contraseña correcto</string>
+
+    <!-- Custom light color -->
+    <string name="custom_light_title">Color Led</string>
+    <string name="custom_light_on_time_title">Tiempo de encendido de la luz durante el pulso del led (ms)</string>
+    <string name="custom_light_off_time_title">Tiempo de apagado de la luz durante el pulso del led (ms)"</string>
+    <string name="value_equals_default">def</string>
+    <string name="show_light_on_zen_title">Parpadeo durante No molestar</string>
+
+    <!-- CPU info -->
+    <string name="show_cpu_info">Mostrar información de la CPU</string>
+    <string name="show_cpu_info_summary">Mostrar una superposición con la información actual de la CPU</string>
+
+    <!-- Sizes for pattern lockscreen -->
+    <string name="lock_pattern_size_3" translatable="false">3 \u00d7 3</string>
+    <string name="lock_pattern_size_4" translatable="false">4 \u00d7 4</string>
+    <string name="lock_pattern_size_5" translatable="false">5 \u00d7 5</string>
+    <string name="lock_pattern_size_6" translatable="false">6 \u00d7 6</string>
+    <string name="lock_settings_picker_pattern_size_message">Elige un tamaño de patrón</string>
+
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <string name="lockpattern_settings_enable_error_path_title">Mostrar error de patrón</string>
+
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <string name="lockpattern_settings_enable_dots_title">Mostrar puntos de patrón</string>
+
+    <!-- Lock screen vibrate settings -->
+    <string name="lockscreen_vibrate_enabled_title">Vibrar</string>
+    <string name="lockscreen_vibrate_enabled_head">Vibrar al desbloquear</string>
+
+    <!-- Less Notification sounds -->
+    <string name="less_notification_sounds_title">Sonidos de notificación menos frecuentes</string>
+    <string name="less_notification_sounds_summary">Reproduce el sonido de notificación de cada aplicación solo una vez por período de tiempo establecido</string>
+    <string name="less_notification_sounds_default">Comportamiento por defecto</string>
+    <string name="less_notification_sounds_3s">Cada 3 segundos</string>
+    <string name="less_notification_sounds_5s">Cada 5 segundos</string>
+    <string name="less_notification_sounds_10s">Cada 10 segundos</string>
+    <string name="less_notification_sounds_15s">Cada 15 segundos</string>
+    <string name="less_notification_sounds_30s">Cada 30 segundos</string>
+    <string name="less_notification_sounds_45s">Cada 45 segundos</string>
+    <string name="less_notification_sounds_1m">Cada 1 minuto</string>
+    <string name="less_notification_sounds_2m">Cada 2 minutos</string>
+    <string name="less_notification_sounds_5m">Cada 5 minutos</string>
+
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Enlazar timbre &amp; volumen de notificación</string>
+
+    <!-- Battery Stats Reset -->
+    <string name="battery_stats_reset">Restablecer estadísticas</string>
+    <string name="battery_stats_message">Las estadísticas del historial de la batería se restablecerán</string>
+    <string name="ok_string">Ok</string>
+
+    <!-- Expanded desktop -->
+    <string name="expanded_desktop_pref_title">Escritorio expandido</string>
+    <string name="expanded_hide_nothing">No ocultar nada</string>
+    <string name="expanded_hide_status">Ocultar barra de estado</string>
+    <string name="expanded_hide_navigation">Ocultar barra de navegación</string>
+    <string name="expanded_hide_both">Ocultar ambos</string>
+    <string name="expanded_nothing_to_show">Para agregar una configuración personalizada por aplicación para el estado expandido, establezca "Habilitado para todos" en la posición de apagado</string>
+    <string name="expanded_desktop_state">Estado expandid</string>
+    <string name="expanded_enabled_for_all">Habilitado para todos</string>
+    <string name="expanded_user_configurable">Configurable por el usuario</string>
+    <string name="expanded_desktop_style">Estilo de escritorio ampliado</string>
+    <string name="expanded_desktop_style_description">Elija un estilo de escritorio expandido predeterminado</string>
+    <string name="expanded_desktop_title">Opciones de escritorio expandidas</string>
+
+    <!-- Selinux -->
+    <string name="selinux_status">Estado de SELinux</string>
+    <string name="selinux_status_disabled">Desactivado</string>
+    <string name="selinux_status_permissive">Permisivo</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
+	<!-- Battery temp -->
+    <string name="battery_temp_title">Temperatura de la batería</string>
+    <string name="battery_temp_summary">Toque para cambiar la escala</string>
+
+    <!-- Screenshot shutter sound -->
+    <string name="screenshot_shutter_sound_title">Sonido al capturar pantalla</string>
+
+    <!-- Torch Power button gestures -->
+    <string name="double_tap_power_flashlight_screen_title">Activar la linterna</string>
+    <string name="double_tap_power_flashlight_title">Apagar la linterna al pulsar el botón de apagar</string>
+    <string name="torch_power_button_gesture_none">Desactivado</string>
+    <string name="torch_power_button_gesture_dt">Presiona dos veces en el botón de apagado para alternar la linterna</string>
+    <string name="torch_power_button_gesture_lp">Mantén presionado para encender la linterna</string>
+
+</resources>
