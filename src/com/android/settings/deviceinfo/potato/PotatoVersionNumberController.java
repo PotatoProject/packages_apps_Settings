@@ -26,7 +26,7 @@ import com.android.settings.Utils;
 
 public class PotatoVersionNumberController {
 
-    private static final String PROP = "persist.potato.version";
+    private static final String PROP = "ro.potato.version";
     private static final int POTATO_VERSION_LABEL_ID = R.id.potato_version_number_label;
     private static final int POTATO_VERSION_VALUE_ID = R.id.potato_version_number_value;
 
