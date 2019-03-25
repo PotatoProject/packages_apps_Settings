@@ -26,7 +26,7 @@ import com.android.settings.Utils;
 
 public class PotatoVersionNameController {
 
-    private static final String VERSION_NAME = "persist.potato.dish";
+    private static final String VERSION_NAME = "ro.potato.dish";
     private static final int POTATO_VERSION_LABEL_ID = R.id.potato_version_dish_label;
     private static final int POTATO_VERSION_VALUE_ID = R.id.potato_version_dish_value;
 
