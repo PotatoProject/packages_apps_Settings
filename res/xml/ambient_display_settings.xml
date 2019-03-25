@@ -62,4 +62,11 @@
 
     </PreferenceCategory>
 
+    <Preference
+            android:key="force_ambient_for_media_pref"
+            android:fragment="com.potato.fries.fragments.AmbientTicker"
+            android:title="@string/force_ambient_for_media_pref_title"
+            android:summary="@string/force_ambient_for_media_pref_summary"
+            settings:userRestriction="no_ambient_display" />
+
 </PreferenceScreen>
