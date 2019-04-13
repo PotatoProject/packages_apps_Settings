@@ -20,6 +20,7 @@
     <string name="host_name">Build Host</string>
     <string name="build_type">Build Type</string>
     <string name="build_date">Build Date</string>
+    <string name="build_flavor">Build Flavor</string>
     <string name="potato_title">POSP</string>
 
     <!-- Volume settings - Volume adjustment sound -->

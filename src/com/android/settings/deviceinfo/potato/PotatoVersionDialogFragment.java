@@ -92,6 +92,7 @@ public class PotatoVersionDialogFragment extends InstrumentedDialogFragment {
         new PotatoVersionMaintainerController(this).initialize();
         new PotatoVersionHostController(this).initialize();
         new PotatoVersionBuildTypeController(this).initialize();
+        new PotatoVersionBuildFlavorController(this).initialize();
         new PotatoVersionBuildDateController(this).initialize();
     }
 }
