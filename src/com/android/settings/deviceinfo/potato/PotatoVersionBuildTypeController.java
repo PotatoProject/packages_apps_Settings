@@ -26,7 +26,7 @@ import com.android.settings.Utils;
 
 public class PotatoVersionBuildTypeController {
 
-    private static final String PROP = "ro.build.flavor";
+    private static final String PROP = "ro.build.type";
     private static final int POTATO_VERSION_LABEL_ID = R.id.potato_version_bt_label;
     private static final int POTATO_VERSION_VALUE_ID = R.id.potato_version_bt_value;
 
@@ -41,7 +41,8 @@ public class PotatoVersionBuildTypeController {
             mDialog.removeSettingFromScreen(POTATO_VERSION_LABEL_ID);
             mDialog.removeSettingFromScreen(POTATO_VERSION_VALUE_ID);
         } else {
-            mDialog.setText(POTATO_VERSION_VALUE_ID, SystemProperties.get(PROP, "").split("-")[1]);
+            String version = SystemProperties.get(PROP, "");
+            mDialog.setText(POTATO_VERSION_VALUE_ID, version.substring(0, 1).toUpperCase() + version.substring(1));
         }
     }
 }
