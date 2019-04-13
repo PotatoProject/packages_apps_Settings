@@ -117,6 +117,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
+        <!-- Build Flavor -->
+        <TextView
+            style="@style/device_info_dialog_label"
+            android:id="@+id/potato_version_bv_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/build_version"/>
+        <TextView
+            style="@style/device_info_dialog_value"
+            android:id="@+id/potato_version_bv_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
         <!-- Build Date -->
         <TextView
             style="@style/device_info_dialog_label"

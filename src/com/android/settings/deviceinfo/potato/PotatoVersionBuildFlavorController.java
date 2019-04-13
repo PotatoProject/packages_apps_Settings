@@ -24,15 +24,15 @@ import android.view.View;
 import com.android.settings.R;
 import com.android.settings.Utils;
 
-public class PotatoVersionMaintainerController {
+public class PotatoVersionBuildFlavorController {
 
-    private static final String PROP = "ro.build.user";
-    private static final int POTATO_VERSION_LABEL_ID = R.id.potato_version_maintainer_label;
-    private static final int POTATO_VERSION_VALUE_ID = R.id.potato_version_maintainer_value;
+    private static final String PROP = "ro.potato.type";
+    private static final int POTATO_VERSION_LABEL_ID = R.id.potato_version_bv_label;
+    private static final int POTATO_VERSION_VALUE_ID = R.id.potato_version_bv_value;
 
     private final PotatoVersionDialogFragment mDialog;
 
-    PotatoVersionMaintainerController(PotatoVersionDialogFragment dialog) {
+    PotatoVersionBuildFlavorController(PotatoVersionDialogFragment dialog) {
         mDialog = dialog;
     }
 
@@ -41,7 +41,8 @@ public class PotatoVersionMaintainerController {
             mDialog.removeSettingFromScreen(POTATO_VERSION_LABEL_ID);
             mDialog.removeSettingFromScreen(POTATO_VERSION_VALUE_ID);
         } else {
-            mDialog.setText(POTATO_VERSION_VALUE_ID, SystemProperties.get(PROP, ""));
+            String version = SystemProperties.get(PROP, "");
+            mDialog.setText(POTATO_VERSION_VALUE_ID, version.substring(0, 1).toUpperCase() + version.substring(1));
         }
     }
 }
