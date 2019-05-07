@@ -53,6 +53,7 @@ import com.android.settings.fuelgauge.anomaly.AnomalyDetectionPolicy;
 import com.android.settings.fuelgauge.batterytip.BatteryTipLoader;
 import com.android.settings.fuelgauge.batterytip.BatteryTipPreferenceController;
 import com.android.settings.fuelgauge.batterytip.tips.BatteryTip;
+import com.android.settings.fuelgauge.UpTimePreferenceController;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
@@ -282,6 +283,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                 BatteryTipListener */);
         controllers.add(mBatteryTipPreferenceController);
         controllers.add(new BatteryPercentagePreferenceController(context));
+        controllers.add(new UpTimePreferenceController(context));
         return controllers;
     }
 
