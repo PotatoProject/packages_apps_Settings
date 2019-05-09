@@ -16,7 +16,7 @@
     <string name="potato_version_dish">Version Name</string>
     <string name="potato_number">Version Number</string>
     <string name="build_status">Build Status</string>
-    <string name="maintainer_name">Maintainer Name</string>
+    <string name="maintainer_name">Builder</string>
     <string name="host_name">Build Host</string>
     <string name="build_type">Build Type</string>
     <string name="build_date">Build Date</string>
