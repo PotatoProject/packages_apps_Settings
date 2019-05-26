@@ -16,6 +16,7 @@
 
 package com.android.settings;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -25,6 +26,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.VisibleForTesting;
 import android.support.annotation.XmlRes;
@@ -52,8 +54,10 @@ import com.android.settings.widget.LoadingViewController;
 import com.android.settingslib.CustomDialogPreference;
 import com.android.settingslib.CustomEditTextPreference;
 import com.android.settingslib.core.instrumentation.Instrumentable;
+import com.android.settingslib.Utils;
 import com.android.settingslib.widget.FooterPreferenceMixin;
 
+import java.lang.Exception;
 import java.util.UUID;
 
 /**
@@ -129,6 +133,15 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+
+        try {
+            ActionBar mActionBar = getActivity().getActionBar();
+            if (mActionBar != null) {
+                mActionBar.setElevation(0);
+                mActionBar.setBackgroundDrawable(new ColorDrawable(Utils.getColorAttr(getContext(), android.R.attr.colorBackground)));
+            }
+        } catch (Exception e) {  }
+
         SearchMenuController.init(this /* host */);
         HelpMenuController.init(this /* host */);
 
