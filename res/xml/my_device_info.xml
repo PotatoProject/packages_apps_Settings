@@ -21,6 +21,21 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:selectable="false">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:src="@drawable/ic_potato"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:tint="?android:attr/colorAccent" />
+    </LinearLayout>
+
     <!--com.android.settings.applications.LayoutPreference
         android:key="my_device_info_header"
         android:order="0"
