@@ -60,4 +60,7 @@
     <!-- Notification log --> 
     <string name="notification_log_summary">Show notifications history log</string>
 
+    <!-- Themes customisation -->
+    <string name="theme_customization_systemui_title">Themes</string>
+
 </resources>
