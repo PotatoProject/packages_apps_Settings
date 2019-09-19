@@ -42,4 +42,7 @@
     <string name="potato_unofficial">Community</string>
     <string name="potato_mashed">Mashed (Official Beta)</string>
 
+    <!-- Strings for suggestion card's close button -->
+    <string name="suggestion_button_close">Close</string>
+
 </resources>
