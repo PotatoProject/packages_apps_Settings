@@ -14,28 +14,34 @@
  * limitations under the License.
  */
 
-package com.android.settings.deviceinfo.firmwareversion;
+package com.android.settings.deviceinfo;
 
 import android.content.Context;
-import android.os.Build;
-import android.text.BidiFormatter;
+import android.os.SystemProperties;
 
+import androidx.annotation.VisibleForTesting;
+
+import com.android.settings.R;
+import com.android.settings.Utils;
 import com.android.settings.core.BasePreferenceController;
 
-public class SimpleBuildNumberPreferenceController extends BasePreferenceController {
+public class BasebandVersionPreferenceController extends BasePreferenceController {
 
-    public SimpleBuildNumberPreferenceController(Context context,
-            String preferenceKey) {
+    @VisibleForTesting
+    static final String BASEBAND_PROPERTY = "gsm.version.baseband";
+
+    public BasebandVersionPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
     }
 
     @Override
     public int getAvailabilityStatus() {
-        return AVAILABLE_UNSEARCHABLE;
+        return !Utils.isWifiOnly(mContext) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
     public CharSequence getSummary() {
-        return BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY);
+        return SystemProperties.get(BASEBAND_PROPERTY,
+                mContext.getString(R.string.device_info_default));
     }
 }
