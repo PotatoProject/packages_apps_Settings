@@ -22,6 +22,10 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+   <PreferenceScreen
+       android:layout="@layout/potato_branding_layout"
+       android:key="potato_branding" />
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
