@@ -21,6 +21,18 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+   <PreferenceScreen
+       android:layout="@layout/potato_branding_layout"
+       android:key="potato_branding" />
+
+    <!-- POSP Version -->
+    <Preference
+        android:key="modversion"
+        android:title="@string/potato_version_title"
+        android:summary="@string/device_info_default"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.PotatoVersionPreferenceController"/>
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
@@ -29,6 +41,13 @@
         settings:enableCopying="true"
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+
+    <!-- POSP build type -->
+    <Preference
+        android:key="build_type"
+        android:title="@string/build_type"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.PotatoBuildTypePreferenceController"/>
 
     <!-- Security patch -->
     <Preference
