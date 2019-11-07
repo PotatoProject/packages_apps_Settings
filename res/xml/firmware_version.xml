@@ -26,7 +26,7 @@
        android:layout="@layout/potato_branding_layout"
        android:key="potato_branding" />
 
-    <!-- ROM Version -->
+    <!-- POSP Version -->
     <Preference
         android:key="modversion"
         android:title="@string/potato_version_title"
@@ -41,6 +41,13 @@
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+
+    <!-- POSP build type -->
+    <Preference
+        android:key="build_type"
+        android:title="@string/build_type"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.PotatoBuildTypePreferenceController"/>
 
     <!-- Security patch -->
     <Preference
@@ -63,7 +70,7 @@
         android:title="@string/baseband_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/> -->??
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/> -->
 
     <!-- Kernel -->
     <Preference
