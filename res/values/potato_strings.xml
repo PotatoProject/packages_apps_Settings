@@ -33,4 +33,7 @@
     <string name="torch_power_button_gesture_dt">Double tap power to toggle torch</string>
     <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
 
+    <!-- POSP version in About phone -->
+    <string name="potato_version_title">POSP version</string>
+
 </resources>
