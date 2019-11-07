@@ -18,4 +18,7 @@
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
 
+    <!-- POSP version in About phone -->
+    <string name="potato_version_title">POSP version</string>
+
 </resources>
