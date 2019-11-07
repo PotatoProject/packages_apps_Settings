@@ -21,4 +21,10 @@
     <!-- POSP version in About phone -->
     <string name="potato_version_title">POSP version</string>
 
+    <!-- Build types, now with translations -->
+    <string name="build_type">Build Type</string>
+    <string name="potato_official">Official</string>
+    <string name="potato_unofficial">Unofficial</string>
+    <string name="potato_dish">%s (%s)</string>
+
 </resources>
