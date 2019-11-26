@@ -24,7 +24,7 @@ import com.android.settings.core.BasePreferenceController;
 
 public class PotatoVersionPreferenceController extends BasePreferenceController {
 
-    private static final String PROPERTY_POTATO_VERSION = "ro.potato.version";
+    private static final String PROPERTY_POTATO_VERSION = "ro.potato.vernum";
 
     public PotatoVersionPreferenceController(Context context, String key) {
         super(context, key);
