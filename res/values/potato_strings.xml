@@ -40,6 +40,6 @@
     <string name="build_type">Build Type</string>
     <string name="potato_official">Official</string>
     <string name="potato_unofficial">Unofficial</string>
-    <string name="potato_dish">%s (%s)</string>
+    <string name="potato_mashed">Mashed</string>
 
 </resources>
