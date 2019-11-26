@@ -26,7 +26,7 @@ import com.android.settings.core.BasePreferenceController;
 public class PotatoBuildTypePreferenceController  extends BasePreferenceController {
 
     private static final String TAG = "PotatoBuildTypePreferenceController";
-    private static final String POTATO_DISH = "ro.potato.dish";
+    private static final String POTATO_BUILD_TYPE = "ro.potato.branding.version";
 
     public PotatoBuildTypePreferenceController(Context context, String key) {
         super(context, key);
@@ -39,11 +39,12 @@ public class PotatoBuildTypePreferenceController  extends BasePreferenceControll
 
     @Override
     public CharSequence getSummary() {
-        String buildType = SystemProperties.get(POTATO_DISH);
+        String buildType = SystemProperties.get(POTATO_BUILD_TYPE);
         switch (buildType) {
-            case "croquette":
-                return mContext.getString(R.string.potato_dish, buildType, mContext.getString(R.string.potato_official));
-
+            case "OFFICIAL":
+                return mContext.getString(R.string.potato_official, buildType);
+            case "MASHED":
+                return mContext.getString(R.string.potato_mashed, buildType);
             default:
                 return mContext.getString(R.string.potato_unofficial);
         }
