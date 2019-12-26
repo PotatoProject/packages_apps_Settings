@@ -39,7 +39,7 @@
     <!-- Build types, now with translations -->
     <string name="build_type">Build Type</string>
     <string name="potato_official">Official</string>
-    <string name="potato_unofficial">Unofficial</string>
-    <string name="potato_mashed">Mashed</string>
+    <string name="potato_unofficial">Community</string>
+    <string name="potato_mashed">Mashed (Official Beta)</string>
 
 </resources>

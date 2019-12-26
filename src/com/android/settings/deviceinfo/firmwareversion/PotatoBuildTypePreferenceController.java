@@ -41,9 +41,9 @@ public class PotatoBuildTypePreferenceController  extends BasePreferenceControll
     public CharSequence getSummary() {
         String buildType = SystemProperties.get(POTATO_BUILD_TYPE);
         switch (buildType) {
-            case "OFFICIAL":
+            case "Official":
                 return mContext.getString(R.string.potato_official, buildType);
-            case "MASHED":
+            case "Mashed":
                 return mContext.getString(R.string.potato_mashed, buildType);
             default:
                 return mContext.getString(R.string.potato_unofficial);
