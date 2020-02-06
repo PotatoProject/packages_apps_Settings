@@ -25,4 +25,7 @@
     <string name="potato_salad">Salad (Internal build)</string>
     <string name="potato_unofficial">Community (Unofficial build)</string>
 
+    <!-- Device Model -->
+    <string name="potato_device_model">Device Model</string>
+
 </resources>
