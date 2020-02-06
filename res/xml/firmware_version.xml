@@ -25,6 +25,13 @@
        android:layout="@layout/potato_branding_layout"
        android:key="potato_branding" />
 
+    <!-- Device Model-->
+    <Preference
+        android:key="potato_device_model"
+        android:title="@string/potato_device_model"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.PotatoModelPreferenceController"/>
+
     <!-- POSP Version -->
     <Preference
         android:key="modversion"
