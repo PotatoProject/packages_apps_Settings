@@ -21,4 +21,7 @@
     <string name="potato_unofficial">Unofficial</string>
     <string name="potato_dish">%s (%s)</string>
 
+    <!-- Device Model -->
+    <string name="potato_device_model">Device Model</string>
+
 </resources>
