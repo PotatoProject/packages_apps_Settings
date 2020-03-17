@@ -57,4 +57,7 @@
     <!-- Device Model -->
     <string name="potato_device_model">Device Model</string>
 
+    <!-- Notification log --> 
+    <string name="notification_log_summary">Show notifications history log</string>
+
 </resources>
