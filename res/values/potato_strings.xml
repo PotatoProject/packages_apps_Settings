@@ -61,4 +61,7 @@
     <!-- Screenshot shutter -->
     <string name="screenshot_shutter_sound_title">Screenshot sound</string>
 
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Screen refresh rate</string>
+
 </resources>
