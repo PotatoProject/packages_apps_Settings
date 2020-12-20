@@ -17,8 +17,9 @@
 
     <!-- Build types, now with translations -->
     <string name="build_type">Build Type</string>
-    <string name="potato_official">Official</string>
-    <string name="potato_unofficial">Unofficial</string>
-    <string name="potato_mashed">Mashed</string>
+    <string name="potato_chessy">Cheesy (Official release)</string>
+    <string name="potato_mashed">Mashed (Open beta)</string>
+    <string name="potato_salad">Salad (Internal build)</string>
+    <string name="potato_unofficial">Community (Unofficial build)</string>
 
 </resources>
