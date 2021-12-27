@@ -1596,4 +1596,11 @@
         <item>2</item>
         <item>4</item>
     </string-array>
+
+    <!-- An allowlist which packages won't show entry in battery usage screen.
+        [CHAR LIMIT=NONE] -->
+    <string-array name="allowlist_hide_background_in_battery_usage">
+        <item>com.google.android.GoogleCamera</item>
+    </string-array>
+
 </resources>
