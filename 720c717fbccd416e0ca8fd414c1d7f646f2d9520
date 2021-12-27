@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd7a217a_0f6be374",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000156
+      },
+      "writtenOn": "2021-12-27T10:07:58Z",
+      "side": 1,
+      "message": "Works fine, doze settings are available in lock screen settings as should, no need ia preferences for device spefific doze/parts",
+      "revId": "720c717fbccd416e0ca8fd414c1d7f646f2d9520",
+      "serverId": "8720d348-3d66-43e6-b480-1d69039ac554"
+    }
+  ]
+}
