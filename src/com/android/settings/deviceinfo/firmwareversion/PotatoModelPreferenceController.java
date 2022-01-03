@@ -25,7 +25,7 @@ import com.android.settings.core.BasePreferenceController;
 public class PotatoModelPreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
-    private static final String POTATO_DEVICE_MODEL = "ro.product.system.model";
+    private static final String POTATO_DEVICE_MODEL = "ro.product.model";
 
     public PotatoModelPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
