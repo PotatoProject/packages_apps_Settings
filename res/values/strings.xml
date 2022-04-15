@@ -14545,4 +14545,10 @@
     <!-- [CHAR LIMIT=NONE] Hint for QR code process failure -->
     <string name="bt_le_audio_qr_code_is_not_valid_format">QR code isn\u0027t a valid format</string>
 
+    <!-- Package details -->
+    <string name="package_details_group_title">Package details</string>
+    <string name="package_name">Package name</string>
+    <string name="package_version">Package version</string>
+    <string name="package_version_text"><xliff:g id="version_num">%1$s</xliff:g></string>
+
 </resources>
