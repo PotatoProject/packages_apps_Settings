@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2017 The halogenOS Project
+ * Copyright (C) 2022 The Potato Open Sauce Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,6 +26,7 @@ import com.android.settings.core.BasePreferenceController;
 public class PotatoVersionPreferenceController extends BasePreferenceController {
 
     private static final String PROPERTY_POTATO_VERSION = "ro.potato.vernum";
+    private static final String POTATO_BUILD_TYPE = "ro.potato.branding.version";
 
     public PotatoVersionPreferenceController(Context context, String key) {
         super(context, key);
@@ -32,14 +34,14 @@ public class PotatoVersionPreferenceController extends BasePreferenceController 
 
     @Override
     public int getAvailabilityStatus() {
-        if (!TextUtils.isEmpty(SystemProperties.get(PROPERTY_POTATO_VERSION))) return AVAILABLE;
+        if (!TextUtils.isEmpty(SystemProperties.get(PROPERTY_POTATO_VERSION)) && !TextUtils.isEmpty(SystemProperties.get(POTATO_BUILD_TYPE))) return AVAILABLE;
         return CONDITIONALLY_UNAVAILABLE;
     }
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(PROPERTY_POTATO_VERSION,
-                mContext.getString(R.string.unknown));
+        return (SystemProperties.get(PROPERTY_POTATO_VERSION) + " ("
+               + (SystemProperties.get(POTATO_BUILD_TYPE) + ") "));
     }
 }
 
