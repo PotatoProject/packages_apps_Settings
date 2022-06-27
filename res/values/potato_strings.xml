@@ -13,17 +13,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- POSP version in About phone -->
-    <string name="potato_version_title">POSP version</string>
-
-    <!-- Build types, now with translations -->
-    <string name="build_type">Build Type</string>
-    <string name="potato_cheesy">Cheesy (Official release)</string>
-    <string name="potato_mashed">Mashed (Open beta)</string>
-    <string name="potato_salad">Salad (Internal build)</string>
-    <string name="potato_unofficial">Community (Unofficial build)</string>
+    <string name="potato_version_title">Potato version</string>
 
     <!-- Device Model -->
-    <string name="potato_device_model">Device Model</string>
+    <string name="potato_device_model">Device model</string>
 
     <!-- Screenshot shutter -->
     <string name="screenshot_shutter_sound_title">Screenshot sound</string>
